@@ -69,3 +69,26 @@ export const GenreTab = styled.div`
   padding: 5px 10px;
   border-radius: 20px;
 `;
+
+export const PageNotFoundHeading = styled.div`
+  grid-column: 1/-1;
+  padding-top: 100px;
+  font-size: 120px;
+  text-align: center;
+  font-family: "Fredoka One";
+  background: linear-gradient(
+    90deg,
+    rgba(128, 95, 235, 1) 0%,
+    rgba(164, 132, 252, 1) 35%,
+    rgba(196, 179, 236, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+export const PageNotFoundSubheading = styled.div`
+  grid-column: 1/-1;
+  font-size: 18px;
+  text-align: center;
+`;
