@@ -37,3 +37,35 @@ export const DiscoverButton = styled.div`
     box-shadow: 0px 10px 40px #805feb;
   }
 `;
+
+export const BackdropImageWrapper = styled.header`
+  grid-column: 1/-1;
+  height: 500px;
+  background-size: cover;
+  background-image: ${(props) => `url("${props.backgroundImage}")`},
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: 50% 10%;
+`;
+
+export const BannerContent = styled.div`
+  width: 100%;
+  padding: 50px;
+  font-size: 24px;
+`;
+
+export const Label = styled.p`
+  font-family: "Fredoka One";
+  color: #8f70f2;
+`;
+
+export const GridColumn = styled.div`
+  padding: 50px;
+`;
+
+export const GenreTab = styled.div`
+  background-color: #1f1f1f;
+  color: gray;
+  padding: 5px 10px;
+  border-radius: 20px;
+`;
