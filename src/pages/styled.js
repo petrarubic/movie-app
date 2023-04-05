@@ -92,3 +92,8 @@ export const PageNotFoundSubheading = styled.div`
   font-size: 18px;
   text-align: center;
 `;
+
+export const MovieDisplayWrapper = styled.div`
+  grid-column: 1/-1;
+  padding: 50px;
+`;
