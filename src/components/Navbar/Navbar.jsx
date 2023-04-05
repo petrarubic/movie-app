@@ -1,6 +1,7 @@
 import { AppName, Logo, LogoWrapper, NavbarWrapper } from "./styled";
 import { NavLink } from "react-router-dom";
 import { getImageBasePath } from "../../utils/getImageBasePath";
+import Search from "../Search/Search";
 
 const Navbar = () => {
   return (
@@ -17,6 +18,11 @@ const Navbar = () => {
           <AppName>MovieTime</AppName>
         </LogoWrapper>
       </NavLink>
+      <ul style={{ display: "flex", listStyle: "none", alignSelf: "flex-end" }}>
+        <li>
+          <Search />
+        </li>
+      </ul>
     </NavbarWrapper>
   );
 };
