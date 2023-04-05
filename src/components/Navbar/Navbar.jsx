@@ -2,6 +2,7 @@ import { AppName, Logo, LogoWrapper, NavbarWrapper } from "./styled";
 import { NavLink } from "react-router-dom";
 import { getImageBasePath } from "../../utils/getImageBasePath";
 import Search from "../Search/Search";
+import FavoritesDropdown from "../Favorites/FavoritesDropdown";
 
 const Navbar = () => {
   return (
@@ -19,6 +20,9 @@ const Navbar = () => {
         </LogoWrapper>
       </NavLink>
       <ul style={{ display: "flex", listStyle: "none", alignSelf: "flex-end" }}>
+        <li>
+          <FavoritesDropdown />
+        </li>
         <li>
           <Search />
         </li>
